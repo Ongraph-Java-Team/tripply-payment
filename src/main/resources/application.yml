@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pay-app
+    version: 1.0
+
+server:
+  port: 8087
+  servlet:
+    context-path: /pay-app
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
